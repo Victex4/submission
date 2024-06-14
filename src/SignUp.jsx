@@ -32,7 +32,7 @@ const SignUp = () => {
   return (
     <div className='flex justify-center min-h-[100vh] items-center w-[] bg-[#E0F1E7]'>
         <form onSubmit={handleFormSubmit}>
-          <div className='w-[450px] bg-white rounded-[12px] py-[30px] px-[40px]'>
+          <div className='w-[350px] md:w-[450px] bg-white rounded-[12px] py-[30px] px-[40px]'>
             {
                 error && <p className='rounded text-center bg-red-400 text-white mb-5 py-1'>{error}</p>
             }
@@ -96,7 +96,7 @@ const SignUp = () => {
             <label><input type="checkbox" onChange={() => setIsChecked(!isChecked)} /> I consent to being contacted by the team <span className='text-red-500'>*</span> </label>
           </div>
           <div>
-            <button className='bg-[#0C7D69] text-white px-[160px] py-[5px] rounded-[50px]'>Submit</button>
+            <button className='bg-[#0C7D69] text-white w-full py-[5px] rounded-[50px]'>Submit</button>
           </div>
           </div>
         </form>
